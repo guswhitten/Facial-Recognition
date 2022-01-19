@@ -1,5 +1,8 @@
 # Facial-Recognition-System
 
+***NOTE*** The Image Processing Toolbox provided by MATLAB will need to be downloaded to complete the entirety of this experiment. 
+
+
 att_faces.zip   ------->    AT&T database of 400 faces: 40 subjects, 10 photos each 
 
 This project implements a software implementation of facial identifcation in MATLAB using the Discrete Cosine Transform (DCT) function with a k-nearest neightbor (kNN) classifier.
