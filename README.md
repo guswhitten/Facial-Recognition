@@ -49,3 +49,21 @@ title('Log Magnitude of 2-D DCT');
 
 __PART 2__
 
+Use the findfeatures.m function to convert the 2-D image into a 1-D "feature" vector. The second parameter of findfeatures.m allows the user to choose the feature length.
+Try the following code:
+imshow(findfeatures('s5/1.pgm', 50));
+
+
+
+__PART 3__
+
+
+
+
+
+
+
+
+
+
+
