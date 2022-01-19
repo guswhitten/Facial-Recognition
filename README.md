@@ -28,27 +28,23 @@ imgrecover=idct2(img2dct);
 imshow(imgrecover,map);
 
 
-To more clearly see the effect the 2-D DCT function has on the image, try the following code:
+                                To more clearly see the effect the 2-D DCT function has on the image, try the following code:
 
 
 % Compute and plot log magnitude of 2-D DCT
 
 t1=0.01.*abs(imgdct); 
-
 t2=0.01*max(max(abs(imgdct)));
-
 c_hat=255*(log10(1+t1)/log10(1+t2)); 
-
 imshow(c_hat,map); 
-
 title('Log Magnitude of 2-D DCT');
-
 
 
 __PART 2__
 
 Use the findfeatures.m function to convert the 2-D image into a 1-D "feature" vector. The second parameter of findfeatures.m allows the user to choose the feature length. This part is just to become more familiar with the process.
 Try the following code:
+
 imshow(findfeatures('s5/1.pgm', 50));
 
 
