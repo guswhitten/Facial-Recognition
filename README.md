@@ -56,10 +56,19 @@ imshow(findfeatures('s5/1.pgm', 50));
 
 
 __PART 3__
+
 The system is trained on the first five images of each subject using the function face_recog_knn_train.m. The two parameters allow the user to train the system on any number of the subjects (though it must start with subject 1) with the max of [1 40], and any DCT coeffecient. 
 Try the following code:
 
+face_recog_knn_train([1 40], 50);
 
+The variable 'ans' in the Workspace tab should then be filled with a 2-D array, 200x50, of the resultant feature vectors.
+
+
+
+__PART 4__
+
+Use the knn_classifier.m function to test the system's effectiveness. Note that the only valid k-value inputs are 1, 3, 5, and 7. The output is the percentage of the images  guessed correctly based on the system's training. Keep in mind that if different length feature vectors are to be tested, the system must be re-trained (as in Part 3) and then knn_classifier.m can be tested again.
 
 
 
