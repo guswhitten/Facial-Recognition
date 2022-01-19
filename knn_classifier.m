@@ -30,7 +30,7 @@ tedata_raw=[];
 % Loop through all subjects (i) and last five images of each (j)
 for i=1:40
     for j=6:10
-        file = ['C:\Users\Whitten\Documents\MATLAB\project\s'...
+        file = ['C:\Users\YOUR_NAME_HERE\Documents\MATLAB\project\s'...
             num2str(range(i)) '\' num2str(j) '.pgm'];
         feat(j-5,:)=findfeatures(file,dct_coef);          %add images 6-10 of each subject to feat
     end
