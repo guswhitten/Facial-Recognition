@@ -14,11 +14,6 @@ The database used for the experiment is the AT&T Laboratories face database (als
 __PART 1__
 
 After reading the face database as well as the MATLAB functions into a MATLAB project, part 1 helps us become acquainted with the database through the following steps:
-1. Read and plot the image
-2. Find the 2-D DCT of the image.
-3. Plot the 2-D DCT.
-4. Find the inverse 2-D DCT to recover the original image and plot it.
-The code to achieve this (substituting :
 
 [img,map]=imread(‘face.pgm’);
 
