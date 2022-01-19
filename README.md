@@ -28,8 +28,8 @@ imshow(imgrecover,map);
 
 % Compute and plot log magnitude of 2-D DCT
 
-t1=0.01. * abs(imgdct); 
-t2=0.01 * max(max(abs(imgdct)));
+t1=0.01.* abs(imgdct); 
+t2=0.01* max(max(abs(imgdct)));
 c_hat=255 * (log10(1+t1)/log10(1+t2)); 
 imshow(c_hat,map); 
 title('Log Magnitude of 2-D DCT');
