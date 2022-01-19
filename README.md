@@ -16,15 +16,10 @@ __PART 1__
 After reading the face database as well as the MATLAB functions into a MATLAB project, part 1 helps us become acquainted with the database through the following steps:
 
 [img,map]=imread(‘face.pgm’);
-
 imshow(img,map);
-
 img2dct=dct2(img);
-
 imshow(img2dct,map);
-
 imgrecover=idct2(img2dct);
-
 imshow(imgrecover,map);
 
 
@@ -33,7 +28,7 @@ imshow(imgrecover,map);
 
 % Compute and plot log magnitude of 2-D DCT
 
-t1=0.01.*abs(imgdct); 
+t1=0.01.'\*'abs(imgdct); 
 t2=0.01*max(max(abs(imgdct)));
 c_hat=255*(log10(1+t1)/log10(1+t2)); 
 imshow(c_hat,map); 
