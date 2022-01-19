@@ -49,13 +49,16 @@ title('Log Magnitude of 2-D DCT');
 
 __PART 2__
 
-Use the findfeatures.m function to convert the 2-D image into a 1-D "feature" vector. The second parameter of findfeatures.m allows the user to choose the feature length.
+Use the findfeatures.m function to convert the 2-D image into a 1-D "feature" vector. The second parameter of findfeatures.m allows the user to choose the feature length. This part is just to become more familiar with the process.
 Try the following code:
 imshow(findfeatures('s5/1.pgm', 50));
 
 
 
 __PART 3__
+The system is trained on the first five images of each subject using the function face_recog_knn_train.m. The two parameters allow the user to train the system on any number of the subjects (though it must start with subject 1) with the max of [1 40], and any DCT coeffecient. 
+Try the following code:
+
 
 
 
