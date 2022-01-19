@@ -16,19 +16,29 @@ After reading the face database as well as the MATLAB functions into a MATLAB pr
 The code to achieve this (substituting :
 
 [img,map]=imread(‘face.pgm’);
+
 imshow(img,map);
+
 img2dct=dct2(img);
+
 imshow(img2dct,map);
+
 imgrecover=idct2(img2dct);
+
 imshow(imgrecover,map);
 
 To more clearly see the effect the 2-D DCT function has on the image, try the following code:
 
 % Compute and plot log magnitude of 2-D DCT
+
 t1=0.01.*abs(imgdct); 
+
 t2=0.01*max(max(abs(imgdct)));
+
 c_hat=255*(log10(1+t1)/log10(1+t2)); 
+
 imshow(c_hat,map); 
+
 title('Log Magnitude of 2-D DCT');
 
 
