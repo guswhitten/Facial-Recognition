@@ -1,14 +1,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % function  [identity_true,identity_guess,success_rate]=knn_classifier(k_value)
 % Name: knn_classifier
-% Function:
-% Input: k_value - 
-%       ?
+% Input: k_value - Choose k = 1, 3, 5, or 7
+%       -Represents the number of nearest neighbors the program takes into account
+%        when making its "guess" for which is the true identity of the image
+
 % Output: 
 %       identity_true - true identity of each test image
 %       identity_guess - identity determined by kNN classifier
-%       success_rate - identification success rate
-% Run: 
+%       success_rate - identification success rate 
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
